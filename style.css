@@ -3,4 +3,12 @@
     height: 50vw;
     background: url("./img/gnome-grass.jpg");
     background-size: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.square {
+    display: flex;
+    border:2px solid blueviolet;
+    flex: auto;
 }
