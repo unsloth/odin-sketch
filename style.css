@@ -13,6 +13,8 @@
 }
 
 .pixel {
-    border:2px solid blueviolet;
+    border:1px solid blueviolet;
+    background-color: white;
     flex: auto;
+    user-select: none;
 }
