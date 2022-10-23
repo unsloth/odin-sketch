@@ -14,8 +14,14 @@ function create(dimension) {
     }
 }
 
+function colorIn(e) {
+    this.style.backgroundColor = "black";
+}
+
 function run() {
     create(16);
+    const pixel = document.querySelectorAll('.pixel');
+    pixel.forEach(p => p.addEventListener('mouseenter', colorIn));
 }
 
 run();
