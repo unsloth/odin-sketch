@@ -7,8 +7,12 @@
     flex-direction: column;
 }
 
-.square {
+.row {
     display: flex;
+    flex: auto;
+}
+
+.pixel {
     border:2px solid blueviolet;
     flex: auto;
 }

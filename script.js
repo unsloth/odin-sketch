@@ -3,14 +3,14 @@ const drawingBoard = document.querySelector('.drawing-board');
 
 function create(dimension) {
     for (let i = 0; i < dimension; i++) {
-        const column = document.createElement('div');
-        column.classList.add('square');
+        const row = document.createElement('div');
+        row.classList.add('row');
         for (let i = 0; i < dimension; i++) {
-            const row = document.createElement('div');
-            row.classList.add('square');
-            column.appendChild(row);
+            const pixel = document.createElement('div');
+            pixel.classList.add('pixel');
+            row.appendChild(pixel);
         }
-        drawingBoard.appendChild(column);
+        drawingBoard.appendChild(row);
     }
 }
 
