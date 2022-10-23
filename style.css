@@ -1,0 +1,6 @@
+.drawing-board {
+    width: 50vw;
+    height: 50vw;
+    background: url("./img/gnome-grass.jpg");
+    background-size: 50vw;
+}
