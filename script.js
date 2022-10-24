@@ -2,6 +2,15 @@ const drawingBoard = document.querySelector('.drawing-board');
 const sizeButton = document.querySelector('.size');
 const resetButton = document.querySelector('.reset');
 
+let pixelColor = "black";
+
+const colorButtons = document.querySelectorAll('.colors button');
+colorButtons.forEach(c => c.addEventListener('click', changeColor));
+
+function changeColor(e) {
+    pixelColor = this.classList.value;
+}
+
 sizeButton.addEventListener('click', selectSize);
 resetButton.addEventListener('click', resetBoard);
 
@@ -19,7 +28,7 @@ function create(dimension) {
 }
 
 function colorIn(e) {
-    this.style.backgroundColor = "black";
+    this.style.backgroundColor = pixelColor;
 }
 
 function refreshPixelSelector() {
