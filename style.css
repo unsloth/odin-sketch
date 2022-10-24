@@ -5,6 +5,7 @@
     background-size: 50vw;
     display: flex;
     flex-direction: column;
+    border: 1px solid blueviolet;
 }
 
 .row {
@@ -13,7 +14,6 @@
 }
 
 .pixel {
-    border:1px solid blueviolet;
     background-color: white;
     flex: auto;
     user-select: none;
